@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import styles from './Buy.module.css';
+import { authContext } from '../../hooks/Context';
 
 const Buy = () => {
     const [symbol, setSymbol] = useState('');
@@ -7,6 +8,7 @@ const Buy = () => {
     const [responseMessage, setResponseMessage] = useState('');
     const [isPurchased, setIsPurchased] = useState(false); // New state to track purchase
     const [isLoading, setIsLoading] = useState(false); // State to track loading status
+    const {url} = useContext(authContext);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -18,7 +20,7 @@ const Buy = () => {
         setIsLoading(true); // Set loading to true when starting the request
 
         try {
-            const response = await fetch('http://localhost:3000/buy', {
+            const response = await fetch(url+'/buy', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

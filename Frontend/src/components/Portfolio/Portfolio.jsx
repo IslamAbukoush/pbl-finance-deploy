@@ -4,14 +4,14 @@ import { authContext } from '../../hooks/Context';
 import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
-    const { userData, lightMode } = useContext(authContext);
+    const { userData, lightMode, url} = useContext(authContext);
     const [tradingHistory, setTradingHistory] = useState([]);
 
     // Fetch trading history from the backend
     useEffect(() => {
         const fetchTradingHistory = async () => {
             try {
-                const response = await fetch('http://localhost:3000/users/'+localStorage.getItem("id")); // Update with your API endpoint
+                const response = await fetch(url+'/users/'+localStorage.getItem("id")); // Update with your API endpoint
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

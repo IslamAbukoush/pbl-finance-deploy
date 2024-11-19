@@ -6,7 +6,7 @@ import { useState, useContext } from 'react';
 import { authContext } from '../../hooks/Context';
 
 const Login = () => {
-    const { isRegistered, setIsRegistered, loadData, lightMode, setLightMode } = useContext(authContext);
+    const { isRegistered, setIsRegistered, loadData, lightMode, url } = useContext(authContext);
     const [info, setInfo] = useState({ username: '', password: '' });
     const [redirect, setRedirect] = useState(false);
     const [validationError, setValidationError] = useState('');
@@ -22,7 +22,7 @@ const Login = () => {
     const login = async (user) => {
         try {
             // Send a POST request to the JSON Server to add the new user
-            const response = await fetch('http://localhost:3000/login', {
+            const response = await fetch(url+'/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

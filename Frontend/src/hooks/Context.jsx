@@ -2,7 +2,10 @@ import { createContext, useEffect, useState } from "react";
 
 export const authContext = createContext();
 
+
+
 const Context = (props) => {
+    const [url, setUrl] = useState("http://localhost:8080");
     const [isRegistered, setIsRegistered] = useState(false);
     const [lightMode, setLightMode] = useState(true);
     const [preferredMode, setPrefferedMode] = useState(localStorage.getItem("preferredMode"));
@@ -22,7 +25,7 @@ const Context = (props) => {
     }
     const register = async (user) => {
         try {
-            const response = await fetch('http://localhost:3000/register', {
+            const response = await fetch(url+'/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -59,7 +62,7 @@ const Context = (props) => {
         console.log("Fetching data for user ID:", userId);
 
         try {
-            const response = await fetch('http://localhost:3000/users/' + userId);
+            const response = await fetch(url+'/users/' + userId);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -86,7 +89,8 @@ const Context = (props) => {
         lightMode,
         setLightMode,
         changeMode,
-        preferredMode
+        preferredMode,
+        url
     };
 
     return (

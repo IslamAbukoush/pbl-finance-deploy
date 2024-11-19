@@ -5,12 +5,12 @@ import { authContext } from '../../hooks/Context';
 const Assets = () => {
     const [assets, setAssets] = useState([]);
     const [loadingId, setLoadingId] = useState(null); // Track which asset is currently being sold
-    const {lightMode} = useContext(authContext);
+    const {lightMode, url} = useContext(authContext);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:3000/users/' + localStorage.getItem("id"));
+                const response = await fetch(url+'/users/' + localStorage.getItem("id"));
                 if (response.ok) {
                     const data = await response.json();
                     setAssets(data.assets);
@@ -30,7 +30,7 @@ const Assets = () => {
         setLoadingId(assetId);
 
         try {
-            const response = await fetch('http://localhost:3000/sell/' + localStorage.getItem("id"), {
+            const response = await fetch(url+'/sell/' + localStorage.getItem("id"), {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
