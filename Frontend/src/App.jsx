@@ -9,7 +9,6 @@ import Features from './components/Features/Features';
 import Pricing from './components/Pricing/Pricing';
 import FAQ from './components/FAQ/FAQ';
 import LeftBar from './components/LeftBar/LeftBar';
-import ContactUs from './components/ContactUs/ContactUs';
 import Login from './components/Login/Login';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Register from './components/Register/Register';
@@ -17,11 +16,10 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import Context, { authContext } from './hooks/Context';
 import ProtectedRoute from './provider/ProtectedRoute';
 import ForgotPassword from './components/ForgotPassword/ForgotPassword';
-import Content from './components/content/content';
+import Content from './components/Content/Content';
 import Buy from './components/Buy/Buy'
 import Bubbles from './components/Bubbles/Bubbles'
 import Chart from './components/Chart/Chart'
-import News from './components/News/News';
 import Assets from './components/Assets/Assets';
 import Contact from './components/ContactUs/Contact';
 import { StarsCanvas } from './components/canvas';
