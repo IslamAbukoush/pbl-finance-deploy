@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f9bbca58-53eb-4c4d-ba41-bb5693d23bff/resourceGroups/investoradeploydemo/providers/Microsoft.Web/sites/investora",
+    "appService.deploySubpath": "Frontend\\dist"
+}
