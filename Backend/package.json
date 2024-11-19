@@ -17,5 +17,8 @@
     "mongodb": "^6.9.0",
     "mongoose": "^8.6.3",
     "mongotest": "file:"
+  },
+  "engines": {
+    "node": ">=20.11.0"
   }
 }
