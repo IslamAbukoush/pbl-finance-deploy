@@ -2,9 +2,9 @@
   "name": "mongotest",
   "version": "1.0.0",
   "description": "A Node.js app for MongoDB testing",
-  "main": "Backend/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node Backend/index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Your Name",
