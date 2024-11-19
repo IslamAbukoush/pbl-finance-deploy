@@ -5,7 +5,7 @@ export const authContext = createContext();
 
 
 const Context = (props) => {
-    const [url, setUrl] = useState("https://investora.azurewebsites.net");
+    const [url, setUrl] = useState("https://investora-ccaedbdccna9dqd3.westeurope-01.azurewebsites.net/");
     const [isRegistered, setIsRegistered] = useState(false);
     const [lightMode, setLightMode] = useState(true);
     const [preferredMode, setPrefferedMode] = useState(localStorage.getItem("preferredMode"));
