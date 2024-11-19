@@ -8,6 +8,7 @@ const saltRounds = 10;  // Number of salt rounds for hashing
 
 // init app & middleware
 const app = express()
+const port = process.env.PORT || 8080; 
 app.use(express.json())
 
 app.use(cors({
@@ -20,8 +21,8 @@ let db;
 
 connectToDb((err) => {
     if (!err) {
-        app.listen(8080, () => {
-            console.log('app listening on port 8080');
+        app.listen(port, () => {
+            console.log('app listening on port '+port);
         })
         db = getDb();
     } else {
