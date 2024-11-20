@@ -37,18 +37,18 @@ const ContactUs = () => {
                 <h1 className={styles.heading}>Who We Are?</h1>
                 <div className={styles.whoWeAreGrid}>
                     <div className={styles.whoWeAreItem}>
-                        <img src="../public/yellow-group.png" alt="people" className={styles.whoWeAreImage} />
+                        <img src="yellow-group.png" alt="people" className={styles.whoWeAreImage} />
                         <p className={styles.whoWeAreTitle}>19,000+ people </p>
 
                         <p className={styles.whoWeAreText}> of different backgrounds, races, and nationalities.</p>
                     </div>
                     <div className={styles.whoWeAreItem}>
-                        <img src="../public/languages.png" alt="Multilingual Support" className={styles.whoWeAreImage} />
+                        <img src="languages.png" alt="Multilingual Support" className={styles.whoWeAreImage} />
                         <p className={styles.whoWeAreTitle}>135 languages</p>
                         <p className={styles.whoWeAreText}>addressing the needs of a multilingual client base.</p>
                     </div>
                     <div className={styles.whoWeAreItem}>
-                        <img src="../public/countries.webp" alt="countries" className={styles.whoWeAreImage} />
+                        <img src="countries.webp" alt="countries" className={styles.whoWeAreImage} />
                         <p className={styles.whoWeAreTitle}>42 countries</p>
                         <p className={styles.whoWeAreText}>enabling us to help more and more people.</p>
                     </div>
@@ -62,7 +62,7 @@ const ContactUs = () => {
                     <button className={styles.submitButton}>Share Your Feedback</button>
                 </div>
                 <div className={styles.contactUsText}>
-                    <img src="../public/contactus.png" alt="Contact Us" className={styles.contactImage} />
+                    <img src="contactus.png" alt="Contact Us" className={styles.contactImage} />
                 </div>
             </div>
 

@@ -83,18 +83,18 @@ const Contact = () => {
                 <h1 className={styles1.heading}>Who We Are?</h1>
                 <div className={styles1.whoWeAreGrid}>
                     <div className={styles1.whoWeAreItem}>
-                        <img src="../public/yellow-group.png" alt="people" className={styles1.whoWeAreImage} />
+                        <img src="yellow-group.png" alt="people" className={styles1.whoWeAreImage} />
                         <p className={styles1.whoWeAreTitle}>19,000+ people </p>
 
                         <p className={styles1.whoWeAreText}> of different backgrounds, races, and nationalities.</p>
                     </div>
                     <div className={styles1.whoWeAreItem}>
-                        <img src="../public/languages.png" alt="Multilingual Support" className={styles1.whoWeAreImage} />
+                        <img src="languages.png" alt="Multilingual Support" className={styles1.whoWeAreImage} />
                         <p className={styles1.whoWeAreTitle}>135 languages</p>
                         <p className={styles1.whoWeAreText}>addressing the needs of a multilingual client base.</p>
                     </div>
                     <div className={styles1.whoWeAreItem}>
-                        <img src="../public/countries.webp" alt="countries" className={styles1.whoWeAreImage} />
+                        <img src="countries.webp" alt="countries" className={styles1.whoWeAreImage} />
                         <p className={styles1.whoWeAreTitle}>42 countries</p>
                         <p className={styles1.whoWeAreText}>enabling us to help more and more people.</p>
                     </div>
